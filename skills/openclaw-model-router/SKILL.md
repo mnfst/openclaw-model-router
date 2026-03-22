@@ -1,9 +1,9 @@
 ---
-name: install-manifest
+name: openclaw-model-router
 description: Install and configure the Manifest LLM router plugin for OpenClaw. Use when the user says "/install-manifest", "install manifest", "add manifest plugin", "setup model router", "reduce LLM costs", or wants to install the Manifest plugin to route requests, cut costs, add fallbacks, and set spending limits. Accepts an optional mode (local or cloud) and API key.
 ---
 
-# Install Manifest
+# OpenClaw Model Router
 
 Install the [Manifest](https://github.com/mnfst/manifest) plugin for OpenClaw — an open-source LLM router that saves up to 70% on model costs.
 
@@ -29,10 +29,10 @@ If the user doesn't specify a mode, default to `local`. If cloud mode and no key
 
 ```bash
 # Local mode (default — no account needed):
-bash skills/install-manifest/scripts/install_manifest.sh
+bash skills/openclaw-model-router/scripts/install_manifest.sh
 
 # Cloud mode:
-bash skills/install-manifest/scripts/install_manifest.sh --mode cloud --key mnfst_YOUR_KEY
+bash skills/openclaw-model-router/scripts/install_manifest.sh --mode cloud --key mnfst_YOUR_KEY
 ```
 
 Use `--dry-run` to preview changes without modifying anything.

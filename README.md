@@ -1,4 +1,4 @@
-# install-manifest
+# openclaw-model-router
 
 A Claude Code skill that sets up the [Manifest](https://github.com/mnfst/manifest) LLM router plugin for OpenClaw. Manifest sits between your app and LLM providers, picking the cheapest model that can handle each request.
 
@@ -31,13 +31,13 @@ setup model router
 
 ```bash
 # Local mode (default)
-bash skills/install-manifest/scripts/install_manifest.sh
+bash skills/openclaw-model-router/scripts/install_manifest.sh
 
 # Cloud mode
-bash skills/install-manifest/scripts/install_manifest.sh --mode cloud --key mnfst_YOUR_KEY
+bash skills/openclaw-model-router/scripts/install_manifest.sh --mode cloud --key mnfst_YOUR_KEY
 
 # Preview changes without touching anything
-bash skills/install-manifest/scripts/install_manifest.sh --dry-run
+bash skills/openclaw-model-router/scripts/install_manifest.sh --dry-run
 ```
 
 ## Prerequisites
@@ -48,7 +48,7 @@ bash skills/install-manifest/scripts/install_manifest.sh --dry-run
 ## Project structure
 
 ```
-skills/install-manifest/
+skills/openclaw-model-router/
   SKILL.md                          # Skill definition (triggers, workflow)
   scripts/install_manifest.sh       # Installation script
 ```
